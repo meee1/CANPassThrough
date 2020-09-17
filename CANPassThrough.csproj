@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>CANPassThrough</AssemblyName>
+    <RootNamespace>CANPassThrough</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MissionPlanner\ExtLibs\Comms\MissionPlanner.Comms.csproj" />
+    <ProjectReference Include="..\MissionPlanner\ExtLibs\UAVCAN\UAVCAN.csproj" />
+  </ItemGroup>
+
+</Project>
