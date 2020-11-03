@@ -36,8 +36,6 @@ namespace CanPassThrough
             {
                 var client = listener.AcceptTcpClient();
                 client.NoDelay = true;
-                client.SendBufferSize = 1024;
-                client.ReceiveBufferSize = 1024;
 
                 var st = client.GetStream();
 
